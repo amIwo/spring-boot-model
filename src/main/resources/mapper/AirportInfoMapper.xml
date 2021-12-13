@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wufeng.code.dao.mapper.AirportInfoMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.wufeng.code.dao.entity.AirportInfo">
+        <id column="id" property="id" />
+        <result column="city_nname" property="cityNname" />
+        <result column="city_ename" property="cityEname" />
+        <result column="airport_nname" property="airportNname" />
+        <result column="airport_ename" property="airportEname" />
+        <result column="iata" property="iata" />
+        <result column="icao" property="icao" />
+        <result column="contry" property="contry" />
+        <result column="contry_ename" property="contryEname" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, city_nname, city_ename, airport_nname, airport_ename, iata, icao, contry, contry_ename
+    </sql>
+
+</mapper>
